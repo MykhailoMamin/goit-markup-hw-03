@@ -128,11 +128,16 @@ img {
   display: flex;
 }
 
+.nav {
+  align-items: center;
+}
+
 .menu-nav .item + .item {
   margin-left: 40px;
 }
 
 .menu-nav .link {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -232,7 +237,7 @@ img {
 /* Advantages */
 
 .section-advant {
-  padding: 120px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -247,7 +252,6 @@ img {
 /* ToDo */
 
 .todo-section {
-  padding-top: 120px;
   padding-bottom: 125px;
 }
 
@@ -315,7 +319,7 @@ img {
 
 .footer-logo {
   display: inline-block;
-  margin-top: 91px;
+  /* margin-top: 91px; */
   margin-bottom: 16px;
 
   font-family: 'Raleway', sans-serif;
@@ -392,22 +396,18 @@ img {
 .card-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
-  margin-bottom: -48px;
-  margin-left: -24px;
+  gap: 48px 24px;
 }
 
 .card-list > .item {
-  flex-basis: calc(100% / 3 - 48px - 24px);
-
-  margin-bottom: 48px;
-  margin-left: 24px;
-}
-
-.card-item {
-  border: 1px solid #e7e9fc;
+  flex-basis: calc(100% / 3 - 72px);
 }
 
 .card-content {
-  padding: 32px 54px 32px 16px;
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--button-border-color);
+  border-right: 1px solid var(--button-border-color);
+  border-left: 1px solid var(--button-border-color);
 }
